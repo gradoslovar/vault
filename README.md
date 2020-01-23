@@ -2,7 +2,7 @@
 
 HashiCorp Vault is a scalable, modular, platform agnostic tool for generate, manage, and store secrets. By secret is ment anything that one want to tightly control access to. Vault provides a unified, API driven access to wide range of secrets, while providing tight access control and recording a detailed audit log.
 
-## Vaul Concepts
+## Vault Concepts
 
 ![Vault Concept](media/layers.png)
 
@@ -199,7 +199,7 @@ vault write auth/oidc/role/devops \
 #### Create Vault external group
 1. Create an external group with policy attached:
 ```
-vault write identity/group name="devopsg" type="external" policies="devops"
+vault write identity/group name="devops" type="external" policies="devops"
 ```
 Keep record of ID of created group
 
